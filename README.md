@@ -18,6 +18,11 @@ This repository contains the Product Requirements Document and the minimal Next.
    ```
 3. Visit `http://localhost:3000` to view the marketing experience.
 
+## Deployment Notes
+- The project root (containing `package.json`) must be used as the deployment entry point so the platform can detect the Next.js
+  framework. If you are deploying to Vercel, leave the **Root Directory** empty (`.`) or set it explicitly to the repository root.
+- Ensure the builder installs dependencies with `npm install` so the pinned Next.js 14 toolchain is available for `npm run build`.
+
 ## Architecture Overview
 - `app/` contains the root layout and landing page composition aligned with the PRD sections (hero, methodology, book comparison, testimonials, bonus stack, authors, FAQ).
 - `components/` exposes modular UI primitives for marketing, lifecycle, and conversion-oriented sections.

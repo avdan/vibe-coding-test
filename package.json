@@ -2,6 +2,10 @@
   "name": "muscle-strength-pyramids",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.2.4",
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
